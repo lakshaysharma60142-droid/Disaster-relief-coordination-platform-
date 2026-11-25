@@ -1,0 +1,762 @@
+*{
+    padding: 0px;
+    margin : 0px;
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:140%;
+}
+body{
+    background-color: #0c1518
+}
+
+#tabs .t button:hover{
+    background-color: #46bcc484;
+    color:#ff8a4c;
+    cursor:pointer;
+}
+
+#tabs , #mid , #below_mid , end,end_in{
+    background-color: #142126;
+}
+
+nav{
+    padding-bottom: 6px;
+    padding:22px;
+    background-color: #11444b;
+}
+nav h4{
+    font-size: 11px;
+    padding-left:4px;
+    color:#e6eef0;
+    line-height:22px;
+    font:italic
+}
+nav h2{
+    color:#e6eef0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:28px;
+   line-height:32px;
+}
+#tabs{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    background-color:#253a40;
+    display:flex;
+}
+
+
+
+#tabs .t button{
+    
+    font-size: 18px;
+    color: #e6eef0;
+    background-color: #1a2b31;
+    padding-bottom: 9px;;
+    padding-top: 9px;
+    padding-left:32.6px ;
+    padding-right:32.66px ;
+    
+}
+
+#mid {
+    margin: 20px;
+    width:90%;
+    margin-left: 40px;
+    margin-top:27px;
+    position: relative;
+    border-radius: 10px;
+    height:187px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 3px;
+    padding-top:30px;
+    margin-bottom: 6px;
+    border: 1px solid #253a40;
+}
+strong{
+    color:#e6eef0;
+}
+select{
+    color:white;
+}
+#mid2 {
+    margin: 20px;
+    width:90%;
+    border: 1px solid #253a40;
+    margin-left: 40px;
+    margin-top:27px;
+    padding-top: 17px;
+    border-radius: 10px;
+    height:74.2%;
+    background-color: #182125;
+    justify-content:center;
+}
+
+#mid2 h3 {
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+    
+#form-top{
+    display: flex;
+    padding-left:20px;
+}    
+
+#form-top .form-top-in input{
+    width: 100%;
+}
+
+#form-mid {
+    display: flex;
+    padding-left:20px;
+}
+    
+
+
+#mid .bw{
+    
+    size: 10px;
+    border:1px solid #253a40;
+    width:150px;
+    margin:8px;
+    height:58%;
+    border-radius: 15px;
+    background-color: #1F2B30;
+    
+    
+}
+
+#mid .bw:hover{
+    border:2px solid rgb(201, 222, 230);
+}
+
+#mid h3{
+    position:absolute;
+    bottom: 77%;
+    right: 81%;
+    color:#e6eef0;
+    font-family:sans-serif
+}
+input{
+    color:aliceblue
+}
+
+#mid .bw h6{
+    margin-top:12px;
+    margin-left:5px;
+    font-family: cursive;
+    color:#93a6ab;
+    line-height: 2px;
+}
+#mid .bw h1{
+    margin-left:13px;
+    margin-top:10px;
+    color: #e6eef0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#below_mid{
+    width:90%;
+    height:120px;
+    margin-left:40px;
+    margin-top:27px;
+    padding:8px 0px;
+    border-radius: 10px;
+    border:1px solid #253a40;
+}
+
+#below_mid h3{
+    padding-left:19px;
+    padding-top:13px;
+    font-family:sans-serif;
+    color:#e6eef0;
+    
+}
+
+#below_mid h4{
+    font:small-caption;
+    size:5px;
+    font-weight:500;
+    line-height: 30px;
+    margin-left:18px;
+    color:aliceblue
+}
+
+#end #end_in .ends:hover{
+    background-color: #1F2B30;
+    color: #119cbe;
+    cursor:pointer;
+}
+
+#below_mid form input{
+    width:93%;
+    line-height: 20px;
+    height:20px;
+    margin-left: 20px;
+}
+
+#end{
+    margin-top:31px;
+    width:90%;
+    height:281px;
+    margin-left: 39px;
+    border-radius: 10px;
+    border:#253a40;
+}
+
+
+#end #end_in .ends{
+    display:flex;
+    justify-content: space-around;
+    height:130px;
+}
+
+#end #end_in{
+    padding-top:13px;
+    padding-left:19px;
+    width:100%;
+    color:#e6eef0;
+    font-family:sans-serif;
+}
+
+#end #end_in .ends {
+    justify-items: center;
+    border:1px solid #253a40;
+    height:40px;
+    align-items: center;
+    font-family: serif;
+}   
+#end #end_in h3{
+    margin-bottom:20px;
+}
+form button{
+    background-color: orangered;
+}
+form button:hover{
+
+    cursor: pointer;
+}
+footer{
+    font-family: fantasy;
+    font-size: 14px;
+    justify-self: center;
+    color:#5E98AA;
+    margin-top:20px;
+}
+
+
+/* ==========================================================================
+   ===== CODE ADDED BY AI  (everything above this line is YOUR code) =====
+   ===== Styles for: requests.html, resources.html, volunteers.html    =====
+   ===== All rules are scoped to body.ai-page / .ai-* so your own      =====
+   ===== pages (index.html, emergency.html, answer.html) do not change =====
+   ========================================================================== */
+
+/* ---------- page boxes (same look as your #mid / #below_mid boxes) ---------- */
+body.ai-page .ai-box {
+    width: 90%;
+    margin: 27px 0 0 40px;
+    padding: 22px 24px;
+    background-color: #142126;
+    border: 1px solid #253a40;
+    border-radius: 10px;
+}
+body.ai-page .ai-box h3 {
+    margin-bottom: 18px;
+    color: #e6eef0;
+    font-family: sans-serif;
+}
+
+/* ---------- current tab highlight (uses your hover colours) ---------- */
+body.ai-page #tabs .t button.ai-active {
+    background-color: #46bcc484;
+    color: #ff8a4c;
+}
+
+/* ---------- small stat cards (same look as your .bw cards) ---------- */
+.ai-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+.ai-stat {
+    width: 150px;
+    padding: 10px 6px 14px 13px;
+    border: 1px solid #253a40;
+    border-radius: 15px;
+    background-color: #1F2B30;
+}
+.ai-stat:hover {
+    border-color: rgb(201, 222, 230);
+}
+.ai-stat h1 {
+    color: #e6eef0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ai-stat h6 {
+    margin-top: 6px;
+    color: #93a6ab;
+    font-family: cursive;
+    font-size: 13px;
+}
+
+/* ---------- toolbars and forms ---------- */
+.ai-toolbar,
+.ai-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+.ai-field {
+    flex: 1 1 170px;
+    min-width: 0;
+}
+.ai-grow {
+    flex: 2 1 240px;
+}
+.ai-field label {
+    display: block;
+    margin-bottom: 6px;
+    color: #e6eef0;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.ai-input {
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    background-color: #182125;
+    border: 1px solid #253a40;
+    border-radius: 7px;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.ai-input::placeholder {
+    color: #93a6ab;
+}
+.ai-input:focus {
+    outline: none;
+    border-color: cadetblue;
+}
+.ai-input option {
+    background-color: #182125;
+    color: aliceblue;
+}
+
+/* ---------- buttons ---------- */
+.ai-btn {
+    height: 36px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: orangered;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ai-btn:hover {
+    filter: brightness(1.12);
+}
+.ai-btn-ghost {
+    background-color: transparent;
+    border: 1px solid #253a40;
+    color: #93a6ab;
+}
+.ai-btn-ghost:hover {
+    border-color: cadetblue;
+    color: #e6eef0;
+    filter: none;
+}
+.ai-btn-small {
+    margin: 2px 6px 2px 0;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid cadetblue;
+    border-radius: 6px;
+    color: cadetblue;
+    font-family: sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.ai-btn-small:hover {
+    background-color: cadetblue;
+    color: #0c1518;
+}
+.ai-btn-danger {
+    border-color: #d65a4a;
+    color: #d65a4a;
+}
+.ai-btn-danger:hover {
+    background-color: #d65a4a;
+    color: #0c1518;
+}
+
+/* ---------- messages, counts, empty state ---------- */
+.ai-count {
+    margin-bottom: 10px;
+    color: #93a6ab;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.ai-empty {
+    display: none;
+    padding: 18px;
+    text-align: center;
+    color: #93a6ab;
+    font-family: sans-serif;
+}
+.ai-msg {
+    display: none;
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    border-radius: 7px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.ai-msg.ok {
+    display: block;
+    color: #7fd69b;
+    background-color: #15301f;
+    border: 1px solid #2a9a55;
+}
+.ai-msg.bad {
+    display: block;
+    color: #ff9d94;
+    background-color: #3d1b19;
+    border: 1px solid #d6382b;
+}
+
+/* ---------- tables (same colours as your "Latest 5 requests" list) ---------- */
+.ai-table-wrap {
+    overflow-x: auto;
+    border: 1px solid #253a40;
+    border-radius: 10px;
+}
+.ai-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+    color: #e6eef0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.ai-table th {
+    padding: 12px 14px;
+    background-color: #1F2B30;
+    border-bottom: 1px solid #253a40;
+    color: cadetblue;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+}
+.ai-table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #253a40;
+    vertical-align: middle;
+}
+.ai-table tbody tr:last-child td {
+    border-bottom: none;
+}
+.ai-table tbody tr:hover {
+    background-color: #1F2B30;
+    color: #119cbe;
+}
+.ai-table td.urg-high   { color: red;        font-weight: bold; }
+.ai-table td.urg-medium { color: orangered;  font-weight: bold; }
+.ai-table td.urg-low    { color: #3cb371;    font-weight: bold; }
+.ai-table td.vol-busy   { color: cadetblue;  font-weight: bold; }
+.ai-table td.ai-actions { white-space: nowrap; }
+
+/* ---------- small screens ---------- */
+@media (max-width: 700px) {
+    body.ai-page .ai-box {
+        width: auto;
+        margin: 18px 12px 0 12px;
+        padding: 18px 14px;
+    }
+    body.ai-page #tabs {
+        overflow-x: auto;
+    }
+    body.ai-page #tabs .t button {
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    .ai-stat {
+        width: calc(50% - 7px);
+    }
+}
+
+
+/* ==========================================================================
+   ===== CODE ADDED BY AI (round 2)  -  everything above is unchanged =====
+   ===== Styles for: floating message, red field border, answer link,  =====
+   =====            and the dashboard "Latest requests" box height     =====
+   ========================================================================== */
+
+/* floating message used by the Report Emergency form (does not move the layout) */
+.ai-toast {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    max-width: 90%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+/* red border on the field that needs fixing */
+.ai-invalid {
+    border-color: #d6382b !important;
+}
+
+/* "Back to Dashboard" link on answer.html */
+#reply .ai-back {
+    display: inline-block;
+    margin-top: 18px;
+    color: #0c1518;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* "Latest 5 requests" box grows if it ever holds 5 rows (it used to hold 4) */
+#end {
+    height: auto;
+    min-height: 281px;
+    padding-bottom: 10px;
+}
+
+
+/* ==========================================================================
+   ===== CODE ADDED BY AI (round 3)  -  MOBILE / TABLET RESPONSIVENESS =====
+   ===== Everything above is unchanged. These rules only switch on when =====
+   ===== the screen is narrow, so the desktop layout stays exactly as   =====
+   ===== it is now. "!important" is used only where your own pages set  =====
+   ===== widths/margins inline (style="...") that CSS cannot beat.      =====
+   ========================================================================== */
+
+
+/* ---------------------------------------------------------------
+   TABLET AND SMALLER  (900px and below)
+   --------------------------------------------------------------- */
+@media (max-width: 900px) {
+
+    html, body {
+        height: auto;
+        min-height: 100%;
+    }
+
+    /* ----- top bar and tabs (all pages) ----- */
+    nav {
+        padding: 16px;
+    }
+    nav h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    nav h4 {
+        line-height: 16px;
+    }
+    #tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    #tabs .t {
+        flex: 0 0 auto;
+    }
+    #tabs .t button {
+        padding: 10px 18px;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    /* ----- dashboard: number cards wrap into rows ----- */
+    #mid {
+        width: auto;
+        height: auto;
+        margin: 16px 12px 0 12px;
+        padding: 16px 8px 10px 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    #mid h3 {
+        position: static;
+        width: 100%;
+        margin: 0 0 6px 8px;
+    }
+    #mid .bw {
+        width: calc(33.33% - 16px);
+        min-width: 100px;
+        height: auto;
+        min-height: 96px;
+        padding-bottom: 12px;
+    }
+    #mid .bw h6 {
+        line-height: 1.3;
+        margin-bottom: 4px;
+    }
+
+    /* ----- dashboard: progress and latest requests ----- */
+    #below_mid {
+        width: auto;
+        height: auto;
+        margin: 16px 12px 0 12px;
+        padding-bottom: 16px;
+    }
+    #below_mid form input {
+        width: calc(100% - 40px);
+    }
+    #end {
+        width: auto;
+        margin: 16px 12px 0 12px;
+        overflow-x: auto;
+    }
+    #end #end_in {
+        min-width: 460px;       /* keeps the 5 columns readable; the box scrolls sideways */
+        padding-right: 19px;
+    }
+
+    /* ----- report emergency form ----- */
+    #mid2 {
+        width: auto;
+        height: auto;
+        margin: 16px 12px 0 12px;
+        padding: 17px 16px 20px 16px;
+    }
+    #mid2 h3 {
+        margin-left: 0;
+    }
+    footer {
+        text-align: center;
+        padding: 0 12px 18px 12px;
+    }
+}
+
+
+/* ---------------------------------------------------------------
+   PHONES  (600px and below)
+   --------------------------------------------------------------- */
+@media (max-width: 600px) {
+
+    /* ----- dashboard cards: 2 per row ----- */
+    #mid .bw {
+        width: calc(50% - 16px);
+    }
+
+    /* ----- dashboard: "Latest 5 requests" fits the phone screen without sideways scrolling ----- */
+    #end #end_in {
+        min-width: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #end #end_in .ends div {
+        flex: 1;
+        padding: 0 2px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    /* ----- report emergency form: every field on its own full-width line ----- */
+    #mid2 br {
+        display: none;
+    }
+    #mid2 form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #mid2 #top,
+    #mid2 #form-top,
+    #mid2 #form-mid,
+    #mid2 #form-last,
+    #mid2 #bottom {
+        padding-left: 0 !important;
+        margin: 0 !important;
+    }
+    #mid2 #form-top,
+    #mid2 #form-mid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #mid2 .form-top-in,
+    #mid2 .form-mid-in {
+        width: 100%;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    #mid2 label {
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+    #mid2 input,
+    #mid2 select,
+    #mid2 textarea {
+        width: 100% !important;
+        height: 40px !important;
+        font-size: 16px;            /* stops the phone from zooming in when a field is tapped */
+    }
+    #mid2 textarea {
+        height: auto !important;
+        min-height: 130px;
+        padding: 8px;
+        resize: vertical;
+        color: aliceblue;
+        border: 1px solid #253a40;
+    }
+    #mid2 #f1 {
+        width: 100%;
+        margin: 4px 0 0 0 !important;
+        padding: 14px !important;
+        font-size: 16px;
+    }
+
+    /* ----- floating message ----- */
+    .ai-toast {
+        width: calc(100% - 24px);
+        text-align: center;
+    }
+
+    /* ----- answer.html ("Help is on the Way!") ----- */
+    #reply {
+        padding: 0 16px 28px 16px;
+    }
+    #reply h1 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    #reply p {
+        line-height: 1.6;
+    }
+
+    /* ----- requests / resources / volunteers pages ----- */
+    .ai-field,
+    .ai-grow {
+        flex: 1 1 100%;
+    }
+    .ai-toolbar .ai-btn,
+    .ai-form .ai-btn {
+        width: 100%;
+    }
+    .ai-input {
+        height: 40px;
+        font-size: 16px;
+    }
+    .ai-stat {
+        width: calc(50% - 7px);
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief Coordination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ai-page">
+    <nav class="elem" id="main">
+        <div id="heading">
+            <h2>Disaster Relief Coordination Platform</h2>
+            <h4>Report emergencies, track resources and manage volunteers in one place</h4>
+        </div>
+    </nav>
+    <div id="tabs">
+        <div class="t"><a href="index.html"><button>Dashboard</button></a></div>
+        <div class="t"><a href="emergency.html"><button>Report Emergency</button></a></div>
+        <div class="t"><a href="requests.html"><button>All Requests</button></a></div>
+        <div class="t"><a href="resources.html"><button class="ai-active">resources</button></a></div>
+        <div class="t"><a href="volunteers.html"><button>Volunteers</button></a></div>
+    </div>
+
+    <div class="ai-box">
+        <h3>Resources</h3>
+
+        <div class="ai-stats">
+            <div class="ai-stat"><h1 id="statTotal">0</h1><h6>Total items</h6></div>
+            <div class="ai-stat"><h1 id="statAvail">0</h1><h6>Available</h6></div>
+            <div class="ai-stat"><h1 id="statLow">0</h1><h6>Low stock</h6></div>
+            <div class="ai-stat"><h1 id="statOut">0</h1><h6>Out of stock</h6></div>
+        </div>
+
+        <div class="ai-toolbar">
+            <div class="ai-field ai-grow">
+                <label for="resSearch">Search</label>
+                <input type="text" id="resSearch" class="ai-input" placeholder="eg. blankets, Ludhiana depot">
+            </div>
+            <div class="ai-field">
+                <label for="resFilter">Category</label>
+                <select id="resFilter" class="ai-input">
+                    <option value="">All</option>
+                    <option value="Food">Food</option>
+                    <option value="Water">Water</option>
+                    <option value="Shelter">Shelter</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Rescue">Rescue</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <button type="button" id="resClear" class="ai-btn ai-btn-ghost">Clear</button>
+        </div>
+
+        <p class="ai-count" id="resCount"></p>
+
+        <div class="ai-table-wrap">
+            <table class="ai-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Stored at</th>
+                        <th>Availability</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="resourcesBody"></tbody>
+            </table>
+            <p class="ai-empty" id="resEmpty">No resources match your search.</p>
+        </div>
+    </div>
+
+    <div class="ai-box">
+        <h3>Add a Resource</h3>
+        <p class="ai-msg" id="resMsg"></p>
+        <div class="ai-form">
+            <div class="ai-field ai-grow">
+                <label for="resName">Item name</label>
+                <input type="text" id="resName" class="ai-input" placeholder="eg. Life jackets">
+            </div>
+            <div class="ai-field">
+                <label for="resCategory">Category</label>
+                <select id="resCategory" class="ai-input">
+                    <option value="">-- select --</option>
+                    <option value="Food">Food</option>
+                    <option value="Water">Water</option>
+                    <option value="Shelter">Shelter</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Rescue">Rescue</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="ai-field">
+                <label for="resQty">Quantity</label>
+                <input type="number" id="resQty" class="ai-input" min="0" placeholder="eg. 100">
+            </div>
+            <div class="ai-field">
+                <label for="resLocation">Stored at</label>
+                <input type="text" id="resLocation" class="ai-input" placeholder="eg. Phagwara Depot">
+            </div>
+            <button type="button" id="addResBtn" class="ai-btn">Add Resource</button>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Disaster Relief Coordination Platform · Built by students of Lovely Professional University
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

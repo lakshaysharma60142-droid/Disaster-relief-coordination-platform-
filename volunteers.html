@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief Coordination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ai-page">
+    <nav class="elem" id="main">
+        <div id="heading">
+            <h2>Disaster Relief Coordination Platform</h2>
+            <h4>Report emergencies, track resources and manage volunteers in one place</h4>
+        </div>
+    </nav>
+    <div id="tabs">
+        <div class="t"><a href="index.html"><button>Dashboard</button></a></div>
+        <div class="t"><a href="emergency.html"><button>Report Emergency</button></a></div>
+        <div class="t"><a href="requests.html"><button>All Requests</button></a></div>
+        <div class="t"><a href="resources.html"><button>resources</button></a></div>
+        <div class="t"><a href="volunteers.html"><button class="ai-active">Volunteers</button></a></div>
+    </div>
+
+    <div class="ai-box">
+        <h3>Volunteers</h3>
+
+        <div class="ai-stats">
+            <div class="ai-stat"><h1 id="statVolTotal">0</h1><h6>Total volunteers</h6></div>
+            <div class="ai-stat"><h1 id="statVolFree">0</h1><h6>Available</h6></div>
+            <div class="ai-stat"><h1 id="statVolBusy">0</h1><h6>Assigned</h6></div>
+        </div>
+
+        <div class="ai-toolbar">
+            <div class="ai-field ai-grow">
+                <label for="volSearch">Search</label>
+                <input type="text" id="volSearch" class="ai-input" placeholder="eg. Aman, medical aid, Phagwara">
+            </div>
+            <div class="ai-field">
+                <label for="volFilter">Status</label>
+                <select id="volFilter" class="ai-input">
+                    <option value="">All</option>
+                    <option value="Available">Available</option>
+                    <option value="Assigned">Assigned</option>
+                </select>
+            </div>
+            <button type="button" id="volClear" class="ai-btn ai-btn-ghost">Clear</button>
+        </div>
+
+        <p class="ai-count" id="volCount"></p>
+
+        <div class="ai-table-wrap">
+            <table class="ai-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Skill</th>
+                        <th>Area</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="volunteersBody"></tbody>
+            </table>
+            <p class="ai-empty" id="volEmpty">No volunteers match your search.</p>
+        </div>
+    </div>
+
+    <div class="ai-box">
+        <h3>Register a Volunteer</h3>
+        <p class="ai-msg" id="volMsg"></p>
+        <div class="ai-form">
+            <div class="ai-field ai-grow">
+                <label for="volName">Full name</label>
+                <input type="text" id="volName" class="ai-input" placeholder="eg. Aman Sharma">
+            </div>
+            <div class="ai-field">
+                <label for="volPhone">Phone no. (10-digits)</label>
+                <input type="text" id="volPhone" class="ai-input" maxlength="10" placeholder="eg. 9873488389">
+            </div>
+            <div class="ai-field">
+                <label for="volSkill">Skill</label>
+                <select id="volSkill" class="ai-input">
+                    <option value="">-- select --</option>
+                    <option value="Medical aid">Medical aid</option>
+                    <option value="Rescue">Rescue</option>
+                    <option value="Food distribution">Food distribution</option>
+                    <option value="Shelter">Shelter</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="ai-field">
+                <label for="volArea">Area / city</label>
+                <input type="text" id="volArea" class="ai-input" placeholder="eg. Phagwara, Punjab">
+            </div>
+            <button type="button" id="addVolBtn" class="ai-btn">Add Volunteer</button>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Disaster Relief Coordination Platform · Built by students of Lovely Professional University
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

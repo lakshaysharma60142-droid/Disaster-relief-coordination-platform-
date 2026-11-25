@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief Coordination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="elem" id="main">
+        <div id="heading">
+            <h2>Disaster Relief Coordination Platform</h2>
+            <h4>Report emergencies, track resources and manage volunteers in one place</h4>
+        </div>
+    </nav>
+    <div id="tabs">
+        <div class="t"><a href="index.html"><button id="b">Dashboard</button></a></div>
+        <div class="t"><a href="emergency.html"><button id="b">Report Emergency</button></a></div>
+        <div class="t"><a href="requests.html"><button id="b">All Requests</button></a></div>
+        <div class="t"><a href="resources.html"><button id="b">resources</div></a></button>
+        <div class="t"><a href="volunteers.html"><button id="b">Volunteers</button></a></div>
+    </div>
+
+    <div id="mid2">
+        <h3 style="color:aliceblue">Report an Emergency</h3>
+        <br>
+        <form action="answer.html">
+            <div class="elem" id="top" style="padding-left:20px;">
+                <label  for="name"><strong>Your Name</strong></label><br>
+                <input type="text" style="width: 96%;border: 1px solid #253a40; background-color: #182125; height: 30px; border-radius: 7px;" id="name" placeholder="enter your name">
+            </div>
+            <br>
+
+            <div id="form-top" class="elem">
+                <div class="form-top-in"style="padding-right: 160px">
+                    <label for="phone"><strong>Phone no. (10-digits)</strong></label><br>
+                    <input  type="number" style="width: 173%;background-color: #182125; border: 1px solid #253a40; height: 30px; border-radius: 7px;" id="phone" placeholder="eg. 9873488389">
+                </div>
+                <div class="form-top-in" style=" padding-right: 160px; margin-left: 20px;">
+                    <label for="effected"><strong>People effected</strong></label><br>
+                    <input required type="number" min="1" style="width: 164%;background-color: #182125; border: 1px solid #253a40; height: 30px; border-radius: 7px;" id="effected" placeholder="eg. 5">
+                </div>
+            </div>
+            <br><br>
+            <div id="form-mid" class="elem">
+                <div class="form-mid-in">
+                    <label  for="disaster"><strong>Disaster Type</strong></label> <br>
+                    <select name="" id="disaster" style="width: 188%;background-color: #182125; border: 1px solid #253a40; height: 30px; border-radius: 7px;">
+                        <option value="">-- select --</option>
+                        <option value="">Flood</option>
+                        <option value="">Earthquake</option>
+                        <option value="">Wildfire</option>
+                        <option value="">Pandemic</option>
+                        <option value="">other</option>
+                    </select>
+                </div>
+                <div class="form-mid-in" style="margin-left: 150px;">
+                    <label  for="help"><strong>Help needed</strong></label> <br>
+                    <select name="" id="help" style="width: 190%;background-color: #182125; height: 30px;border: 1px solid #253a40; border-radius: 7px;">
+                        <option value="">-- select --</option>
+                        <option value="">Food</option>
+                        <option value="">Shelter</option>
+                        <option value="">Medical aid</option>
+                        <option value="">Rescue</option>
+
+                    </select>
+                </div>
+                <div class="form-mid-in" style=" margin-left: 18%;">
+                    <label  for="urgency"><strong>Urgency</strong></label> <br>
+                    <select required name="" id="urgency" style="width: 203%;background-color: #182125; height: 30px;border: 1px solid #253a40; border-radius: 7px;">
+                        <option value="">-- select --</option>
+                        <option value="">High</option>
+                        <option value="">Medium</option>
+                        <option value="">Low</option>
+
+                    </select>
+                </div>
+                </div><br>
+                
+                <div id="form-last" style="margin-left: 20px;margin-top: 24px;">
+                    <label for="area"><strong>Location (area / city)</strong> </label> <br>
+                <input type="text" style="width:95.6%;background-color: #182125; border: 1px solid #253a40; height:30px;border-radius: 7px;" class="last" id="area" placeholder="eg. Phagwara,Punjab">
+                </div>
+                <div id="bottom" style="margin-left: 20px;margin-top: 24px;">
+                    <label for="description"><strong>Description (min 10 characters)</strong> </label> <br>
+                <textarea style="border-radius: 7px; color:white; background-color: #182125;" name="description" placeholder="Describe the situation..." marg rows="6" cols="73" id="description"></textarea>
+                </div>
+
+            <button id="f1" style="margin:1px; border:none;margin-left:20px; ; border-radius: 3px; padding: 20px;">Submit Request</button>
+
+        </form>
+
+
+    </div>
+    <footer>&copy; 2026 Disaster Relief Coordination Platform · Built by students of Lovely Professional University
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

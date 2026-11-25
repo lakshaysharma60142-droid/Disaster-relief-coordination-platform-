@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief Coordination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ai-page">
+    <nav class="elem" id="main">
+        <div id="heading">
+            <h2>Disaster Relief Coordination Platform</h2>
+            <h4>Report emergencies, track resources and manage volunteers in one place</h4>
+        </div>
+    </nav>
+    <div id="tabs">
+        <div class="t"><a href="index.html"><button>Dashboard</button></a></div>
+        <div class="t"><a href="emergency.html"><button>Report Emergency</button></a></div>
+        <div class="t"><a href="requests.html"><button class="ai-active">All Requests</button></a></div>
+        <div class="t"><a href="resources.html"><button>resources</button></a></div>
+        <div class="t"><a href="volunteers.html"><button>Volunteers</button></a></div>
+    </div>
+
+    <div class="ai-box">
+        <h3>All Requests</h3>
+
+        <div class="ai-toolbar">
+            <div class="ai-field ai-grow">
+                <label for="searchBox">Search</label>
+                <input type="text" id="searchBox" class="ai-input" placeholder="eg. flood, Phagwara, rescue">
+            </div>
+            <div class="ai-field">
+                <label for="urgencyFilter">Urgency</label>
+                <select id="urgencyFilter" class="ai-input">
+                    <option value="">All</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+            <div class="ai-field">
+                <label for="statusFilter">Status</label>
+                <select id="statusFilter" class="ai-input">
+                    <option value="">All</option>
+                    <option value="Pending">Pending</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Resolved">Resolved</option>
+                </select>
+            </div>
+            <button type="button" id="clearBtn" class="ai-btn ai-btn-ghost">Clear</button>
+        </div>
+
+        <p class="ai-count" id="countText"></p>
+
+        <div class="ai-table-wrap">
+            <table class="ai-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Reported by</th>
+                        <th>Type</th>
+                        <th>Help needed</th>
+                        <th>Location</th>
+                        <th>People</th>
+                        <th>Urgency</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="requestsBody"></tbody>
+            </table>
+            <p class="ai-empty" id="emptyText">No requests match your search.</p>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 Disaster Relief Coordination Platform · Built by students of Lovely Professional University
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
